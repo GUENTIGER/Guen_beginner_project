@@ -2,13 +2,13 @@ import numbers
 from unittest import result
 
 
-def recusive_binary_search(list, target): # recusive binary search algorithm
+def recusive_binary_search(list, target): 
   if len(list) == 0:
       return False
   else:
     midpoint = (len(list))//2 # get the midpoint of the list
 
-    if list[midpoint] == target: # the condition if the midpoint is equal to the target
+    if list[midpoint] == target: 
       return True
     else:
       if list[midpoint] < target: 
@@ -18,7 +18,7 @@ def recusive_binary_search(list, target): # recusive binary search algorithm
 def cin(result):
   print("Target found in index at: ", result)
   
-numbers = [1,2,3,4,5,6,7,8,9] # create a list with variable numbers
+numbers = [1,2,3,4,5,6,7,8,9]
 
 result = recusive_binary_search(numbers,12)
 cin(result)
