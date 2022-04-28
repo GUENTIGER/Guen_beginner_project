@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mycode </title>
+  <link rel="icon" href="./assets/img/guen.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/icon_form/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="./assets/css/style3responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+    
+
+<div>
+  <!-- chương trình luôn có một thẻ div để bao bọc toàn bộ content trong 1 thẻ div(div main) -->
+ <div id="main">
+   <div id="header">
+     <!-- begin header tag: nav -->
+    <nav class="nav-pc">
+    <ul id="nav">
+      <li ><a href="#">Home</a></li>
+      <li><a href="#">Band</a></li>
+      <li ><a href="#">Tour</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">More
+        <i class="nav-arrow-down fa fa-angle-down "></i></a>
+        <ul class="subnav">
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Extras</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    <!-- end nav -->
+     <!-- begin sreach button -->
+     <div id="menu-mobile" class="sreach-btn">
+      <i class="search-icon fa fa-search"></i>
+    </div>
+      <label  for="nav-check" class="nav-menu">
+        <i class=" fa fa-bars"></i>
+       
+      </label>
+      <input type="checkbox" class="nav-input" id="nav-check">
+    <!-- mobile begin -->
+
+    <label for="nav-check" class="nav-overlay"></label>
+    <nav  class="nav-mobile">
+      <label for="nav-check" class="nav-mobile-close">
+        <i class="fa fa-window-close"></i>
+      </label>
+      <ul class="nav-list">
+        <li ><a href="#" class="nav-mobile-links" > Home <i class="fa fa-home"></i></a></li>
+        <li><a href="#band" class="nav-mobile-links"> Band <i class="fa fa-user"></i></a></li>
+        <li ><a href="#tour" class="nav-mobile-links">Tour <i class="fa fa-plane"></i></a></li>
+        <li><a href="#contact" class="nav-mobile-links">Contact <i class="fa fa-address-book"></i></a></li>
+        <li><a href="#more" class="nav-mobile-links">More
+          <i class="nav-arrow-down fa fa-angle-down"></i>
+        </a>
+          <ul class="subnav-mobile">
+            <li><a href="#" class="nav-mobile-links">Merchandise (testing) <i class="fa fa-wrench"></i></a></li>
+            <li><a href="#" class="nav-mobile-links">Extras(testing)  <i class="fa fa-wrench"></i></a></li>
+            <li><a href="#media" class="nav-mobile-links">Media <i class="fa fa-wrench"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+   </div>
+ <!-- end header -->
+   <div id="slider">
+           <video class="videos"  autoplay controls>
+            <source src="./assets/video/Erik Lund - Summer Time - Vịnh Hạ Long 4K - Drone Cinematic.mp4" type="video/mp4">
+          Your browser does not support the video tag.</video>
+   
+   </div>
+
+    <!-- Begin: Content -->
+   <div id="content">
+    <!--  About Sections -->
+   
+    <div id="band" class="content-section col-full ">
+      <h2 class="section-heading">THE BAND</h2>
+      <p class="section-sub-heading">We love music</p>
+      <p class="about-text">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="row member-list">
+        <div class="col col3 text-center">
+          <p class="member-name">Vinh Ha Long</p>
+          <img src="./assets/img/vinhhalong.jpg" alt="" class="member-img">
+        </div>
+        <div class="col col3 text-center">
+          <p class="member-name">Hai Phong</p>
+          <img src="./assets/img/haiphong3.jpg" alt="" class="member-img">
+        </div>
+        <div class="col col3 text-center">
+          <p class="member-name">Da Lat</p>
+          <img src="./assets/img/dalat1.jpg" alt="" class="member-img">
+        </div>
+      </div>
+    </div>
+      <!-- END: About Sections -->
+
+      <!-- TOUR DATES -->
+      <div class="tour-sections">
+        <div id="tour" class="content-section">
+          <h2 class="section-heading text-white">TOUR DATES</h2>
+          <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+       
+          <!-- tickets -->
+          <ul class="ticket-list">
+            <li>September <span class="sold-out">Sold out</span></li>
+            <li>October <span class="sold-out">Sold out</span></li>
+            <li>November <span class="quantity text-center">3</span></li>
+          </ul>
+
+          <!-- Places -->
+          <div class="row place-list">
+            <div class="col col3">
+              <img src="./assets/img/vinhhalong.jpg" alt="Vinh Ha long" class="place-img">
+              <div class="place-body">
+                <h3 class="place-heading">Vinh Ha Long</h3>
+                <p class="place-time">Fri 27 Nov 2021</p>
+                <p class="place-discripton">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="btn js-buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="col col3">
+              <img src="./assets/img/phu-quoc.jpeg" alt="Phu quoc" class="place-img">
+              <div class="place-body">
+                <h3 class="place-heading">Phu Quoc</h3>
+                <p class="place-time">Sat 28 Nov 2021</p>
+                <p class="place-discripton">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="btn js-buy-ticket">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="col col3">
+              <img src="./assets/img/dalat1.jpg" alt="Da Lat" class="place-img">
+              <div class="place-body">
+                <h3 class="place-heading">Da Lat</h3>
+                <p class="place-time">Sun 29 Nov 2016</p>
+                <p class="place-discripton">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="btn js-buy-ticket">Buy Tickets</button>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: TOUR DATES -->
+
+  
+
+      <!-- begin CONTACT -->
+      <div id="contact" class="content-section">
+        <h2 class="section-heading ">CONTACT</h2>
+        <p class="section-sub-heading">Fan? Drop a note!</p>
+
+
+
+          <div class="row contact-content">
+            <div class="col col-haft contact-info"> 
+           <p><i class=" fa fa-map-pin"></i>Chicago, US</p>
+            <p><i class=" fa fa-mobile"></i>Phone: +00 151515</p>
+           <p><i class=" fa fa-envelope"></i>Email:email@mail.com</p>
+               </div>
+            
+                <!-- contact form  -->
+            <div class="col col-haft contact-form mg16tb">
+              <form action="">
+                <div class="row">
+                  <div class="col col-haft">
+                   <input type="text" name="" placeholder="Name" required id="" class="formcontrol">
+                  </div>
+                  <div class="col col-haft">
+                    <input type="email" name="" placeholder="Email" required id="" class="formcontrol">
+                  </div>
+                </div>
+                <div class="row mt-8">
+                   <div class="col col-full">
+                    <input type="text" name="" placeholder="Message" required id="" class="formcontrol">
+              </div>
+            </div>
+                <input  class="btn full-right mg-16 pad8-16 " type="submit" value="SEND" >
+              </form>
+            </div>
+          </div>
+        
+  
+      </div>
+      <!--  End CONTACT -->
+
+      <!-- begin map -->
+      <!-- <img src="./assets/img/map.jpg" alt="map" class="map-section col-full" > -->
+      <!-- thêm video vào trình duyệt -->
+      <video id="media" class="video" autoplay muted controls>
+        <source src="./assets/video/edmnhac.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+
+    </div>
+   <!-- End: Content -->
+
+       
+
+   <div id="footer">
+     <div class="social text-center ">
+   <a href="https://www.facebook.com/tiger.guen.1998/"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.youtube.com/channel/UC0xEnpEobbR7aRH_9L__yzA"><i class="fa fa-youtube"></i></a>
+   <a href="https://twitter.com/guenkonteh"><i class="fa fa-twitter-alt"></i></a>
+   <a href=""><i  class="fa fa-pinterest"></i></a>
+   <a href=""><i  class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/GUENWWE"><i class="fa fa-github"></i></a>
+     </div>
+    <p class="copytright mg-16 text-center">powered by <a href="https://www.youtube.com/channel/UC0xEnpEobbR7aRH_9L__yzA">GUEN TIGER </a></p>
+   </div>
+ </div>
+  
+   
+
+ <!-- modal -->
+ <div class=" modal js-modal">
+<div class="modal-container js-modal-container">
+  <div class="modal-close  js-modal-close">
+    <i class="fa fa-close"></i>
+     </div>
+     <!-- header-modal -->
+  <header class="modal-header">
+    <i class="modal-heading-icon fa fa-briefcase">
+      Tickets
+    </i>
+  </header>
+
+  <!-- body modal -->
+  <div class="modal-body">
+    <label for="ticket-quantity" class="modal-label">
+      <i class="fa fa-shopping-cart"></i>
+        Tickets, $15 per person
+      </label>
+      <input id="ticket-quantity" type="" class="modal-input" placeholder="How many?">
+
+      <label for="ticket-enter" class="modal-label">
+        <i class="fa fa-users"></i>
+          Send To?
+        </label>
+        <input id="ticket-enter" type="" class="modal-input" placeholder="Enter Email">
+
+        <button id="buyticket">
+          PAY
+          <i class="fa fa-check"></i>
+        </button>
+     
+  </div>
+  <!-- footer modal -->
+    <foor class="modal-footer">
+      <p class="modal-help">Need <a href="">help?</a></p>
+    </foor>
+</div>
+ </div>
+
+
+ <script>
+  /* ví dụ về java script: */ 
+  const buyBtns = document.querySelectorAll('.js-buy-ticket')
+  const modal = document.querySelector('.js-modal')
+  const modalContainer = document.querySelector('.js-modal-container')
+  const modalClose= document.querySelector('.js-modal-close')
+  const backing = document.querySelector('.js-back')
+
+    // hàm hiển thị modal mau vé(hiện class open của modal)
+    function showButtonTickets()
+    {
+      modal.classList.add('open')
+    }
+    // Hàm ẩn vé(gỡ bỏ class open của modal)
+    function hideButtonTickets()
+    {
+      modal.classList.remove('open')
+    }
+
+    // lặp qua từng thẻ button và nghe hành vi click
+    for( const buyBtn of buyBtns)
+    {
+      buyBtn.addEventListener('click', showButtonTickets)
+    }
+    // nghe hành vi click vào button close
+    modalClose.addEventListener('click', hideButtonTickets)
+
+
+    
+    
+    // nghe hành vi click đóng modal từ bên ngoài
+    modal.addEventListener('click',hideButtonTickets)
+    modalContainer.addEventListener('click', function(event){
+      event.stopPropagation()
+    })
+    // nghe hành vi click đóng menu
+    // var headers = document.getElementById('header');
+    // console.log(headers)
+    // var mobileMenu = document.getElementById('mobile-menu');
+    // console.log(mobileMenu)
+    
+
+</script>
+</div>
+</body>
+</html>
+
