@@ -12,7 +12,7 @@ public class buble_sort {
       }
     }
     System.out.print("Sorted Array: ");
-    for (int i = 0; i < n; i++){// print the sorted array
+    for (int i = 0; i < n; i++){// loops to sort the element
     System.out.print(arr[i] + " ");
     }
     
