@@ -10,7 +10,6 @@ void merge(int arr[],int l,int m,int r)
         //creat temp arrays    
         int L[nL],R[nR];
 
-        // copy element
         for (i = 0; i < nL; i++) // copy left part
         {
             L[i]=arr[l+i];
