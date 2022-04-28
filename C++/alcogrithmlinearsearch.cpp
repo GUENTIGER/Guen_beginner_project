@@ -5,9 +5,9 @@ using namespace std;
 
 int lsearch(int arr[], int size, int item) // create function linear seacrh 
 {
-    for (int i = 0; i < size; i++)  // loop to check each element in array
+    for (int i = 0; i < size; i++)  
     {
-        if (arr[i] == item) // if arr[i] == item
+        if (arr[i] == item) 
         {
             return i;
         }
@@ -18,14 +18,14 @@ int lsearch(int arr[], int size, int item) // create function linear seacrh
 int main()
 {
 
-    // create an array of integers   
+   
     int arr[] = {12,7,5,4,11,6};
-    int n = 6; // size of array
-    int x = 4; // item to be searched
+    int n = 6; 
+    int x = 4; 
 
     // declare temp int function main
     int temp;
-    temp = lsearch(arr,n,x); // use linear sreach algorithm
+    temp = lsearch(arr,n,x);
     if (temp!= -1)
     {
         cout <<"the item is found at: " << temp+1; 
