@@ -7,7 +7,7 @@ public static int sum(int k)
 {
   if (k > 0)
   {
-    return k + sum(k-1); // return k + sum(k-1) to perform recursion
+    return k + sum(k-1);
   }
   else
   {
@@ -30,6 +30,7 @@ public static int recuc(int start, int end) {
 public static void main(String[] args){
   int result = sum(10); // 10 is argument for k in sum method
   System.out.println(result); 
+  
   /*  Example Explained Recusion:
  When the sum() function is called, it adds parameter k to the sum of all numbers smaller than k and returns the result. 
  When k becomes 0, the function just returns 0. When running, the program follows these steps:
@@ -40,10 +41,10 @@ public static void main(String[] args){
  ...
  10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + sum(0)
  10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0 */
-     
-  // Halting Condition(Điều kiện tạm dừng):
+    // Halting Condition(Điều kiện tạm dừng):
   int result2 = recuc(5 , 10);
-  System.out.println(result2);
+  System.out.println(result2);  
+ 
 
   /* Just as loops can run into the problem of infinite looping, recursive functions can run into the problem of infinite recursion. 
   Infinite recursion is when the function never stops calling itself.
