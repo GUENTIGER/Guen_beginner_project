@@ -2,7 +2,7 @@
 from pyzbar import pyzbar
 import cv2
 
-image = cv2.imread('your image path') # put it in your code location
+image = cv2.imread('your image path') # replace file img in your code location
 #QRcode.png
 
 barcodes = pyzbar.decode(image)
