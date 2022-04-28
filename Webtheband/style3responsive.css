@@ -1,0 +1,229 @@
+
+.nav-menu
+{
+
+ color: #fff;
+ float: left;
+ font-size: 30px;
+ display: none;
+ margin: 5px 10px;
+ 
+
+ 
+
+}
+.nav-overlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  animation: fadeIN linear 0.2;
+}
+.nav-mobile
+{
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  height: 270px;
+  max-width: 100%;
+  /* background-color: #fff; */
+  background-color: #063146;
+  transform: translateX(-200%);
+  transition: transform linear 0.3s;
+  
+  
+
+  /* test */
+
+}
+.nav-list
+{
+  margin-top: 24px;
+
+}
+.nav-mobile-links
+{
+  text-decoration: none;
+  color: white;
+  padding: 9px 0px;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  width: 100%;
+  /* đặt display = block để set padding */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+.nav-list .subnav-mobile{ 
+
+  display: none;
+  /* position: absolute; */
+  background-color: #063146;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* border-radius: 12px; */
+  /* boder-radius dùng để tạo góc cạnh */
+ top: 100%;
+ left:0;
+ min-width: 160px;
+
+}
+.nav-list .subnav-mobile a {
+  color: #000;
+  padding: 0px 12px;
+  line-height: 8px 16px;
+}
+
+.nav-list li:hover .subnav-mobile{
+  /* để hiện vào mục con ta hover vào thẻ chính; ví dụ thẻ li */
+  display: block;
+  /* dùng display: block để hiện lên */
+  
+  }
+  
+.nav-list > li:hover > a
+{
+    color: #000;
+    background-color: #ccc;
+}
+.nav-list .subnav-mobile li:hover{
+    color: #000;
+    background-color: #ccc;
+    /* border-radius: 10px; */
+
+}
+.nav-mobile-close
+{
+  
+  font-size: 1.4rem;
+  color: #666;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.2rem;
+}
+.nav-mobile-close:hover
+{
+  color: red;
+}
+#nav-check
+{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+
+}
+.nav-input
+{
+  display: none;
+}
+.nav-input:checked ~ .nav-overlay
+{
+  display: block;
+}
+.nav-input:checked ~ .nav-mobile
+{
+  transform: translateX(0);
+}
+
+@keyframes fadeIN
+{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+
+}
+
+
+
+/* min-width là lớn hơn */
+/* max-width là nhỏ hơn */
+
+/* thẻ chung */
+@media only screen and (max-width: 739px ) and (max-width:1023px) {
+
+}
+/* Mobile: max width< 730px */
+@media only screen and (max-width: 739px){
+
+  .member-list, .col3
+  {
+    width: 100%;
+    display: block;
+   
+  }
+  .about-text
+  {
+    padding: 0.01em 16px;
+  }
+  #nav
+  {
+    display: none;
+  }
+  .place-body
+  {
+    text-align: center;
+  }
+  .contact-info, .contact-form
+  {
+    width: 100%;
+  }
+  .text-content,.text-head
+  {
+    
+    width: 100%;
+    display: block;
+  }
+ 
+  .nav-menu
+  {
+    display: block;
+  }
+}
+
+/* điện thoại */
+@media only screen and (max-width:739px){
+  .nav, .sreach-btn, .text-content
+  {
+    display: none;
+  }
+  .nav-mobile
+  {
+    display: block;
+  }
+
+ 
+}
+/* tablet : min width > 740 and max width < 1023px (lớn hơn 730 và nhỏ hơn 1023 */
+@media only screen and (min-width: 740px ) and (max-width:1023px) {
+  .nav
+  {
+    display: block;
+  }
+  .nav-mobile
+  {
+    display: none;
+  }
+ 
+}
+/* pc: width >= 1023px ---> (>= lớn hơn hoặc bằng 1023)*/
+@media only screen and (min-width: 1024px){
+    .nav
+  {
+    display: block;
+  }
+  .nav-mobile
+  {
+    display: none;
+  }
+ 
+  }
