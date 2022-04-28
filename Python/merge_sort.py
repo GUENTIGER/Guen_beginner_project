@@ -14,9 +14,9 @@ from turtle import left, right
 def mergesort(list):
   if len(list) <= 1:
     return list
-  left_half, right_half = split(list) # devide the list at midpoint
-  left = mergesort(left_half) # recursive call 
-  right = mergesort(right_half) # recursive call
+  left_half, right_half = split(list) 
+  left = mergesort(left_half) 
+  right = mergesort(right_half)
   
   return merge(left, right)
 
@@ -43,12 +43,12 @@ def merge(left, right):
   l = [] # create a new list
   i = 0
   j = 0
-  while i < len(left) and j < len(right): # while i is less than or equal to the length of left and j is less than or equal to the length of right
+  while i < len(left) and j < len(right):
     if left[i] < right[j]:
-      l.append(left[i]) # append the value of left at index i to the end of the list l
+      l.append(left[i]) 
       i += 1
     else:
-      l.append(right[j]) # append the value of right at index j to the end of the list l
+      l.append(right[j]) 
       j += 1
   while i < len(left):
     l.append(left[i])
@@ -56,9 +56,9 @@ def merge(left, right):
   while j < len(right):
     l.append(right[j])
     j += 1
-  return l # return the new list l after sorted
+  return l
 
-def verify_sorted(list): # verify the list is sorted or not
+def verify_sorted(list):
   """
   Verify if the list is sorted
   """
