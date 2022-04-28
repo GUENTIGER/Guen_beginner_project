@@ -14,7 +14,7 @@ for barcode in barcodes:
     barcodeTypes = barcode.type
     text = "{} ({})".format(barcodeData,barcodeTypes)
     cv2.putText(image,text,(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0, 255),2)
-    # cv2.putText(image,text,(x,y-10),cv2.FONT_HERSEY_SIMPLEX,0.5,(0,0,255),2)
+    
 
     print("[INFO] Found{} barcode: {} ".format(barcodeTypes,barcodeData))
 
