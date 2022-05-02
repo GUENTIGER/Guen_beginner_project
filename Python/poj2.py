@@ -2,7 +2,6 @@
 
 #created a product and price for the three items
 from  email import message
-from ssl import create_default_context
 
 # created products and prices
 product1,price1 = "coffee", 1.5
