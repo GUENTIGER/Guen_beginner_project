@@ -41,6 +41,8 @@ print("=" * 50)
 # print out of header for section total
 print("\t\t\t\tTotal")
 
+print("=" * 50)
+
 #  calculate total price and print out
 total = price1 + price2 + price3
 print("\t\t\t\t${}\n".format(total))
