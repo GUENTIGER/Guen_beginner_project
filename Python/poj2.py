@@ -43,9 +43,9 @@ print("\t\t\t\tTotal")
 
 #  calculate total price and print out
 total = price1 + price2 + price3
-print("\t\t\t\t${}".format(total))
+print("\t\t\t\t${}\n".format(total))
 
-print("=" * 50)
+
 
 #  end message
 print("\t{}\n".format(message))
