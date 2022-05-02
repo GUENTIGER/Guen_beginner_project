@@ -14,7 +14,7 @@ company_address ="283 Franklin, St"
 company_city ="Boston,Ma"
 
 # declare for end shopping
-message = "Thank for shopping today"
+message = "Thank for shopping with us today!"
 
 # create top border
 print("*" * 50)
