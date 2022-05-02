@@ -6,7 +6,7 @@ from  email import message
 # created products and prices
 product1,price1 = "coffee", 1.5
 product2, price2 = "computer", 5
-product3, price3 = "moninter", 10
+product3, price3 = "moninter", 200
 
 #  created the comapny and adress
 company_name ="Amd , inc"
