@@ -5,7 +5,7 @@ public class guessGame {
 
       int  numbers = (int) (Math.random() * 10 + 1);
       int guessed = 0;
-      System.out.println("Guess a number between 1 and 10: " + numbers);
+      System.out.println("Guess a number between 1 and 10: ");
       int count = 1;
 
       while(guessed != numbers){
